@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!-- Task 1: Simple Calculator ,USING CONDITION-->
+
+
+  <label>enter the number</label>
+  <input type="number" id="one">
+  <br><br>
+  <label>enter the number</label>
+  <input type="number" id="two">
+
+  <h1>ans is <span id="ans"></span></h1>
+
+  <h5>1 = addtition</h5>
+  <h5>2 = substraction</h5>
+  <h5>3 = multiplication</h5>
+  <h5>4 = division</h5>
+  <h5>5 = module</h5>
+
+  <label>choose the operation</label>
+  <input type="text" id="three">
+
+  <button onclick="calculate()">submit</button>
+
+  
+
+  <script>
+    function calculate()
+ {
+
+  var score = document.getElementById('three').value
+  if(score==1)
+  {
+    function add()
+     {
+      var a = document.getElementById('one').value
+      var b = document.getElementById('two').value
+
+
+      var ans = parseInt(a)+parseInt(b);
+      document.getElementById('ans').innerHTML = ans;
+    }
+    add();
+
+  }
+  else if (score==2)
+   {
+    function mini()
+     {
+      var a = document.getElementById('one').value
+      var b = document.getElementById('two').value
+
+
+      var ans = parseInt(a)-parseInt(b);
+      document.getElementById('ans').innerHTML = ans;
+    }
+    mini();
+
+    
+  }
+  else if(score==3)
+ {
+  function multi()
+     {
+      var a = document.getElementById('one').value
+      var b = document.getElementById('two').value
+
+
+      var ans = parseInt(a)*parseInt(b);
+      document.getElementById('ans').innerHTML = ans;
+    }
+    multi();
+
+
+ }
+ else if(score==4)
+ {
+  function divide() 
+    {
+      var a = document.getElementById('one').value
+      var b = document.getElementById('two').value
+
+
+      var ans = parseInt(a)/parseInt(b);
+      document.getElementById('ans').innerHTML = ans;
+    }
+    divide();
+
+ }
+ else if(score==5)
+ {
+  function modul() {
+      var a = document.getElementById('one').value
+      var b = document.getElementById('two').value
+
+
+      var ans = parseInt(a)%parseInt(b);
+      document.getElementById('ans').innerHTML = ans;
+    }
+    modul();
+ }
+ }
+
+  </script>
+
+
+</body>
+
+</html>
+</body>
+</html>
